@@ -67,7 +67,7 @@ while n >= 1:
 profit = float(input("Введите выручку компании: "))
 costs = float(input("Введите издержки компании: "))
 if profit > costs:
-    print(f"Компания работает с прибылью. Выручка составила {profit / costs:.2f}")
+    print(f"Компания работает с прибылью. Выручка составила {profit - costs:.2f}")
     workers = int(input("Введите количество сотрудников в компании "))
     print(f"прибыль в расчете на одного сторудника сотавила {profit / workers:.2f}")
 elif profit == costs:
