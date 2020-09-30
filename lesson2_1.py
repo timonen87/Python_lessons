@@ -7,9 +7,9 @@
  (Можно ограничиться вложенностью 1 уровня и не обходить содержимое этих вложенных коллекций.)
 '''
 
-list_1 = [23, 'cycle', None, -50, False, 4.5]
-def my_type(el):
-    for el in range(len(list_1)):
-        print(type(list_1[el]))
+list_el = [23, 'cycle', None, -50, False, 4.5]
+def List_type (el):
+    for el in range(len(list_el)):
+        print(type(list_el[el]))
     return
-my_type(list_1)
+List_type(list_el)
