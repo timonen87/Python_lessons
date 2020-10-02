@@ -8,8 +8,16 @@
 '''
 
 list_el = [23, 'cycle', None, -50, False, 4.5]
-def List_type (el):
+def L_type (el):
     for el in range(len(list_el)):
         print(type(list_el[el]))
     return
-List_type(list_el)
+L_type(list_el)
+
+'''
+Вариант без создания функции 
+'''
+list_el = [23, 'cycle', None, -50, False, 4.5]
+ for el in range(len(list_el)):
+      print(type(list_el[el]))
+ 
