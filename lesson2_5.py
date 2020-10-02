@@ -19,7 +19,7 @@ num = int(input("Введите новый элемент рейтинга "))
 while num != 111:
     for el in range(len(my_list)):
         if my_list[el] == num:
-            my_list.insert((el + 1, num))
+            my_list.insert(el + 1, num)
             break
         elif my_list[0] < num:
             my_list.insert(0, num)
