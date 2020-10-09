@@ -16,3 +16,17 @@ def zp():
         return print("Значение не введено")
 zp()
 
+
+# Скрипт с параметрами 
+
+from sys import argv
+
+name, time, rate, bonus = argv
+try:
+    time = int(time)
+    rate = int(rate)
+    bonus = int(bonus)
+    res = time * rate + bonus
+    print(f'Заработная плата  {res}')
+except ValueError:
+    print('Значение не введено')
