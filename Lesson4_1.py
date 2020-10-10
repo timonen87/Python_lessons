@@ -10,8 +10,9 @@ def zp():
         time = int(input("Введите выработку в час "))
         rate = int(input("Введите ставку в у.е. "))
         bonus = int(input("Введите размер премии в у.е. "))
-        res = time * rate + bonus
-        print(f"Заработная плата - {res}")
+        res = (20 * (time * rate)) + bonus   #С учетом 20 рабочих дней в месяце.
+        print(f'Заработная плата в месяц  {res}')
+    print(f'Премия  {bonus}')
     except ValueError:
         return print("Значение не введено")
 zp()
@@ -26,7 +27,8 @@ try:
     time = int(time)
     rate = int(rate)
     bonus = int(bonus)
-    res = time * rate + bonus
-    print(f'Заработная плата  {res}')
+    res = (20 * (time * rate)) + bonus
+    print(f'Заработная плата в месяц  {res}')
+    print(f'Премия  {bonus}')
 except ValueError:
     print('Значение не введено')
