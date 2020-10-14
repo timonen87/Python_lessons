@@ -11,7 +11,9 @@ def summ():
             f_obj.writelines(numm)
             my_summ = numm.split()
 
-            print(sum(map(int, my_summ)))
+            print(sum(map(int, my_summ)))         
+    except IOError:
+        print("Произошла ошибка ввода-вывода!")
     except ValueError:
         print('Непраильно введены числа, введите числа через пробел')
 summ()
