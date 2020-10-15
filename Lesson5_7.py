@@ -35,9 +35,9 @@ with open('file7.txt', 'r') as file:
             i += 1
     if i != 0:
         prof_average = prof / i
-        print(f'Прибыль средняя - {prof_average:.2f}')
+        print(f'Средняя прибль - {prof_average:.2f}')
     else:
-        print(f'Прибыль средняя - отсутсвует. Все работают в убыток')
+        print(f' Все компании работают в убыток')
     profit_av = {'средняя прибыль': round(prof_average)}
     profit.update(profit_av)
     print(f'Прибыль каждой компании - {profit}')
@@ -46,5 +46,5 @@ with open('file7.json', 'w') as file_json:
     json.dump(profit, file_json)
 
     json_str = json.dumps(profit)
-    print(f'Создан файл с расширением json со следующим содержимым: \n '
+    print(f'Создан файл  json : \n '
           f' {json_str}')
