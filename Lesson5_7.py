@@ -38,7 +38,7 @@ with open('file7.txt', 'r') as file:
         print(f'Средняя прибль - {prof_average:.2f}')
     else:
         print(f' Все компании работают в убыток')
-    profit_av = {'средняя прибыль': round(prof_average)}
+    profit_av = {'Средняя прибыль': round(prof_average)}
     profit.update(profit_av)
     print(f'Прибыль каждой компании - {profit}')
 
