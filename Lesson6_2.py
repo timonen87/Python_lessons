@@ -17,15 +17,15 @@ class Road:
         self._length = _length
         self._width = _width
 
-    def mass(self):
+    def weight(self):
         return self._length * self._width
 
 
-class MassCount(Road):
+class WeightCount(Road):
     def __init__(self, _length, _width, volume):
         super().__init__(_length, _width)
         self.volume = volume
 
 
-m = MassCount(40, 2000, 105)
-print(m.mass())
+m = WeightCount(40, 2000, 105)
+print(m.weight())
