@@ -12,22 +12,20 @@ length (длина), width (ширина).
 '''
 
 
-from time import sleep
+class Road:
+    def __init__(self, _length, _width):
+        self._length = _length
+        self._width = _width
 
-class Trafficlight:
-    __color = ['Классный', 'Желтый', 'Зеленый']
+    def mass(self):
+        return self._length * self._width
 
-    def running(self):
-        i = 0
-        while i < 3:
-            print(f'Светофор переключается: \n' f'{Trafficlight.__color[i]}')
-            if i == 0:
-                sleep(7)
-            elif i == 1:
-                sleep(5)
-            elif i == 2:
-                sleep(3)
-            i += 1
 
-t = Trafficlight()
-t.running()
+class MassCount(Road):
+    def __init__(self, _length, _width, volume):
+        super().__init__(_length, _width)
+        self.volume = volume
+
+
+m = MassCount(40, 2000, 105)
+print(m.mass())
